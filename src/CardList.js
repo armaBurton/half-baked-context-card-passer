@@ -1,7 +1,13 @@
 import React from 'react';
 import Card from './Card';
+import { useContextObj } from './ContextProvider';
 
-export default function CardList({ cards, setSelectedCard, player, setFrom, selectedCard }) {
+export default function CardList({ cards, player }) {
+  const {
+    selectedCard, setSelectedCard,
+    setFrom
+  } = useContextObj();
+  
   return (
     <div className='card-list'>
       {
