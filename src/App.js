@@ -3,7 +3,6 @@ import Player from './Player';
 import CardList from './CardList';
 import ExecutePassButton from './ExecutePassButton';
 import { useContextObj } from './ContextProvider';
-import data from './cards-data';
 
 function App() {
   const {
