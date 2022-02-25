@@ -17,7 +17,6 @@ export default function Card({ card, player }) {
   function handleCardClick() {
     setFrom(player);
     setSelectedCard(card);
-    console.log(`|| player, card >`, player, card);
   }
   
   // if there IS a selected card, and it has the same value and suit as THIS card, style it differently
